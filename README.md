@@ -1,4 +1,4 @@
 # The Seven Continents
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### This Website tells you about all the Continents in the world briefly with their map.
 
