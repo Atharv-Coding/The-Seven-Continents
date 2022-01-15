@@ -1,0 +1,305 @@
+.navbar{
+    width: 100%;
+    height: auto;
+    min-height: 60px;
+    background-color: #2f3640;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 1000;
+    position: fixed;
+    transition: all 0.2s ease-in-out;
+}
+.navbar .logo{
+    width: 60px;
+    height: 60px;
+    background-image: url("./images/logo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+}
+.navbar h2{
+    color: aliceblue;
+    font-size: 25px;
+    position: absolute;
+    left: 70px;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+}
+.navbar ul{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: absolute;
+    right: 0;
+}
+.navbar ul li{
+    list-style: none;
+}
+.navbar ul li a {
+    cursor: pointer;
+    text-decoration: none;
+    list-style: none;
+    margin: 20px 20px;
+    color: rgba(255, 255, 255, 0.657);
+    font-size: 19px;
+}
+.navbar ul li a.active{
+    color: white;
+    font-size: 500;
+}
+.container{
+    width: 100vw;
+    height: 70vh;
+    background: linear-gradient(#ff9f1a 68.5%, #0a3d62 32.5%);
+    color: white;
+}
+.container h1{
+    font-size: 50px;
+    font-weight: 500;
+    align-self: flex-start;
+    position: relative;
+    top: 56%;
+    margin-left: 30px;
+    color: black;
+
+}
+.container h3{
+    font-size: 27px;
+    font-weight: 500;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 30px;
+    position: relative;
+    top: 64%;
+}
+#continent h1{
+    font-size: 40px;
+    margin: 20px 30px;
+}
+#continent h2{
+    font-size: 30px;
+    margin: 10px 30px;
+}
+#continent p{
+    font-size:22px;
+    margin: 10px 30px;
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.aside{
+    position: absolute;
+    left: 820px;
+    top: 78.2%;
+    font-size:22px;
+    margin: 10px 30px;
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.map{
+    margin-left: 0px;
+    width: 800px;
+    height: 1000px;
+}
+
+.see-more{
+    width: 140px;
+    height: 40px;
+    font-size: 19px;
+    font-family: 'QuickSand', sans-serif;
+    margin-top: 30px;
+    outline: none;
+    border: none;
+    background-color: #00bfff;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.see-more:hover{
+    background-color: #00a3da;
+}
+::selection{
+    background: #0be881;
+    color: black;
+}
+.open{
+    display: block !important;
+}
+#extra-content{
+    display: none;
+}
+#extra-content h2{
+    margin-left: 0;
+}
+.burger{
+    display: none;
+    position: absolute;
+    right: 20px;
+}
+
+.line{
+    width: 37px;
+    margin: 5px;
+    background: rgb(255, 255, 255);
+    border-radius: 3px;
+    height: 6px;
+}
+
+#home h1 {
+    font-size: 40px;
+    margin: 20px 30px;
+}
+.home-data{
+    font-size:22px;
+    margin: 10px 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.asia-map {
+    width: 588px;
+    height: 445px;
+}
+.mode-btn,.adv-btn{
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+    margin: 0 10px;
+    background-color: #0c2461;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 60px;
+    font-family: 'Quicksand', sans-serif;
+    position: fixed;
+    bottom: 10px;
+    z-index: 1000;
+}
+.mode-btn{
+    right: 10px;
+}
+.bg-light{
+    background-color: white;
+    color: #0c2461;
+}
+.bg-dark{
+    background-color: #222f3e;
+    color: #e4ebf0;
+}
+@media screen and (max-width: 1649px) {
+    .aside{
+        left: 0px;
+        top: auto;
+        margin: 10px 30px;
+        flex-direction: column;
+        width: auto;
+
+    }
+    .see-more{
+        margin: 20px 0;
+    }
+    #continent p {
+        margin-right: 30px;
+        width: auto !important;
+    }
+
+}
+@media screen and (max-width: 909px) {
+    .container h3 {
+        font-size: 22px;
+        margin: 0px 30px;
+        position: relative;
+        top: 60%;
+    }
+    .container h1 {
+        font-size: 40px;
+
+    }
+    .burger{
+        display: block;
+        top: 15px;
+    }
+    .navbar{ 
+        height: 100%;
+    }
+    .navbar h2 {
+        font-size: 25px;
+        left: 0px;
+        width: 100%;
+        height: 20%;
+        top: 40px;
+        margin: auto;
+    }
+    .navbar .logo {
+        width: 70px;
+        height: 70px;
+        margin: auto;
+        position: absolute;
+        left: 45%;
+        top: 10px;
+    }
+    .navbar ul {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        top: 8%;
+    }
+    .navbar ul li{ 
+        margin: 20px auto;
+    }
+    .navbar ul li a{
+        font-size: 25px;
+        text-align: justify;
+    }
+    .nav-height {
+        height: 70px;
+    }
+    .visibility-class{
+        opacity: 0;
+    }
+    .asia-map{
+        width: 400px;
+        height: 278px;
+    }
+    .map{
+        width: 600px;
+        height: 600px;
+    }
+}
+@media screen and (max-width: 498px) {
+    .container {
+        height: 80vh;
+    }
+    .container h3 {
+        font-size: 18px;
+        margin: 0px 20px;
+        top: 63%;
+    }
+    .container h1 {
+        font-size: 28px;
+        margin-left: 20px;
+    }
+    .asia-map {
+        width: 300px;
+        height: 210px;
+    }
+
+    .map {
+        width: 320px;
+        height: 500px;
+    }
+}

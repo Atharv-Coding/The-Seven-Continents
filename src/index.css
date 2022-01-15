@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+    transition: all 1s linear;
+}
+body{
+    overflow-x: hidden;
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: #0c2461;
+}
+title{
+    color: red;
+}
+
